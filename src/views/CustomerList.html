@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/dashboard.css" />
+    <link rel="stylesheet" href="/CustomerList.css" />
+    <script defer src="dashboard.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <button id="toggle-btn">☰</button>
+        </div>
+        <nav class="sidebar-nav">
+          <ul>
+            <li><a href="/dashboard/admin">Dashboard</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="/dashboard/admin/Customer/list">Customers</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <header class="topbar">
+          <div
+            style="display: flex; align-items: center; flex-direction: column"
+          >
+            <h1>Welcome, Admin</h1>
+            <p>List user yang tersedia saat ini</p>
+          </div>
+
+          <input type="search" placeholder="Search..." />
+        </header>
+
+        <section class="customer-section">
+          <table id="customerTable" border="1">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Telepon</th>
+                <th>Alamat</th>
+                <th>Created At</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <!-- Rows will be added here -->
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="/CustomerList.js"></script>
+    <script src="/Dashboard.js"></script>
+  </body>
+</html>

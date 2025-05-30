@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/dashboard.css" />
+    <script defer src="dashboard.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <button id="toggle-btn">☰</button>
+        </div>
+        <nav class="sidebar-nav">
+          <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="/dashboard/admin/Customer/list">Customers</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <header class="topbar">
+          <h1>Welcome, Admin</h1>
+          <input type="search" placeholder="Search..." />
+        </header>
+
+        <section class="cards">
+          <div class="card">
+            <h3>Users</h3>
+            <p>1,024</p>
+          </div>
+          <div class="card">
+            <h3>Orders</h3>
+            <p>512</p>
+          </div>
+          <div class="card">
+            <h3>Revenue</h3>
+            <p>$12,345</p>
+          </div>
+          <div class="card">
+            <h3>Feedback</h3>
+            <p>89</p>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="/Dashboard.js"></script>
+  </body>
+</html>
